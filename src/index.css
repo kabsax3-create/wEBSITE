@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif; /* Helvetica-like feel from Inter with heavy weights */
+
+  --color-primary: #BD0017; /* Brighter, deeper Red from design */
+  --color-secondary: #FFBC0D; /* Rich Yellow from design */
+  --color-dark: #27251F; /* Specific design black */
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-white font-sans antialiased selection:bg-secondary selection:text-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-secondary text-dark font-display uppercase tracking-wider px-8 py-4 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg border-none font-black;
+  }
+  .btn-secondary {
+    @apply bg-dark text-white font-display uppercase tracking-wider px-8 py-4 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg font-black;
+  }
+}
