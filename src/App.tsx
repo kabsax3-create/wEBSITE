@@ -22,7 +22,7 @@ export default function App() {
       <header className="lg:col-start-2 lg:col-end-4 lg:row-start-1 flex justify-between items-center px-8 lg:px-10">
         <div className="hidden lg:flex gap-8 font-black uppercase text-xs tracking-widest text-white/70">
           <a href="#menu" className="hover:text-secondary transition-colors">Menu</a>
-          <a href="#menu" className="hover:text-secondary transition-colors">STORE</a>
+          <a href="#STORE" className="hover:text-secondary transition-colors">STORE</a>
           <a href="#deals" className="hover:text-secondary transition-colors">Rewards</a>
           <a href="#locator" className="hover:text-secondary transition-colors">Locations</a>
         </div>
